@@ -1,6 +1,6 @@
 # Magic Wand: Rock, Paper, Scissors
 
-> **Note:** I worked on this project when I went to a summer school in Hangzhou. In the first week, we worked on a line-follower car, and in the second week, we developed this rock, paper, scissors gesture recognition model.
+> **Note:** I worked on this project at a summer school in Hangzhou. In the first week, we made a line-follower car, and in the second week, we developed this rock, paper, scissors gesture recognition model.
 
 ## Project Description
 
@@ -21,6 +21,10 @@ The project utilizes the following languages for specific purposes:
 * **Data Processing:** Uses Pandas to read and structure the training and testing datasets from CSV files.
 * **Conversion:** Converts the trained model into the TensorFlow Lite format (`.tflite`) required for the microcontroller.
 
+### JSON (IDE Configuration)
+* **Workspace Setup:** Configures the VS Code workspace folders and settings for a consistent development environment.
+* **Recommendations:** Suggests necessary extensions (like PlatformIO IDE) to ensure all tools are available.
+
 ### INI (Configuration)
 * **Project Setup:** Configures the PlatformIO build environment, specifying the board, framework, and library dependencies.
 
@@ -36,6 +40,12 @@ The project is configured for the **4D Systems ESP32-S3 Gen4 R8N16** board.
     * 🪨 **Rock:** Pin `37`
     * ✂️ **Scissors:** Pin `36`
     * 📄 **Paper:** Pin `35`
+
+### Driver Installation (CH34x)
+This development board uses the **CH34x USB-to-UART bridge** to communicate with the computer.
+* **Purpose:** The driver allows your operating system to recognize the ESP32-S3 as a serial COM port (e.g., `COM3` on Windows, `/dev/ttyUSB0` on Linux).
+* **Usage:** You must install this driver **before** attempting to upload code or use the Serial Monitor. Without it, the IDE will not be able to find the board.
+* **Installation:** Download and install the specific **CH340/CH341** driver for your operating system (Windows/macOS/Linux).
 
 ## Software Dependencies
 
@@ -55,6 +65,7 @@ This project is built using **PlatformIO** with the **Arduino** framework. The f
 
 ## Directory Structure
 
+* `.vscode/`: VS Code configuration files for extensions and workspace settings.
 * `src/`: Contains the main C++ source code (`main.cpp`) and model headers.
 * `train/`: Contains the Python scripts (`train.py`) for training the neural network and the dataset CSV files (`data_x.csv`, `data_y.csv`).
 * `lib/`: Directory for private libraries.
