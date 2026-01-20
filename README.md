@@ -68,5 +68,6 @@ This project is built using **PlatformIO** with the **Arduino** framework. The f
 * `.vscode/`: VS Code configuration files for extensions and workspace settings.
 * `src/`: Contains the main C++ source code (`main.cpp`) and model headers.
 * `train/`: Contains the Python scripts (`train.py`) for training the neural network and the dataset CSV files (`data_x.csv`, `data_y.csv`).
+* `DatasetPreparation/`: Collecting the data for training and testing the model.
 * `lib/`: Directory for private libraries.
 * `test/`: Unit testing files.
