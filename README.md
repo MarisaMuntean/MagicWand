@@ -5,6 +5,7 @@
 ## Project Description
 
 This project implements a "Magic Wand" using an **ESP32-S3 microcontroller** and an **MPU6050 IMU**. The device recognizes hand gestures for the game "Rock, Paper, Scissors" using a machine learning model. It captures motion data, processes it through a Kalman filter to stabilize the signal, and runs a **TensorFlow Lite** model on-device to classify the gesture and display the result via LEDs.
+<img width="1106" height="453" alt="image" src="https://github.com/user-attachments/assets/acdcc970-ecdd-4c66-b32b-1b8396e60ab2" />
 
 ## Languages and Usage
 
@@ -40,6 +41,8 @@ The project is configured for the **4D Systems ESP32-S3 Gen4 R8N16** board.
     * 🪨 **Rock:** Pin `37`
     * ✂️ **Scissors:** Pin `36`
     * 📄 **Paper:** Pin `35`
+
+<img width="500" height="673" alt="image" src="https://github.com/user-attachments/assets/07eb429d-8872-428e-8ffa-37c2ba133922" />
 
 ### Driver Installation (CH34x)
 This development board uses the **CH34x USB-to-UART bridge** to communicate with the computer.
