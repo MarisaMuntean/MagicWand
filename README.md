@@ -38,9 +38,9 @@ The project is configured for the **4D Systems ESP32-S3 Gen4 R8N16** board.
 * **Input Button:** Pin `41` (Input Pullup)
 * **Status LED:** Pin `42`
 * **Gesture Output LEDs:**
-    * 🪨 **Rock:** Pin `37`
-    * ✂️ **Scissors:** Pin `36`
-    * 📄 **Paper:** Pin `35`
+    * **Rock:** Pin `37`
+    * **Scissors:** Pin `36`
+    * **Paper:** Pin `35`
 
 <img width="500" height="673" alt="image" src="https://github.com/user-attachments/assets/07eb429d-8872-428e-8ffa-37c2ba133922" />
 
